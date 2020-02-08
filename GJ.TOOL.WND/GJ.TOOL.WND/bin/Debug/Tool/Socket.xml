@@ -1,0 +1,12 @@
+<Socket>
+<Parameter>
+  <!--上料位-->
+  <DeviceType>02</DeviceType>
+  <!--查询状态-->
+  <CommandNo>01</CommandNo>
+  <!--读写-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-->
+  <DataValue>0</DataValue>
+</Parameter>
+</Socket>

@@ -1,0 +1,80 @@
+﻿<冠佳电子>
+  <仪器设备 Name="仪器设备">
+    <读卡器 Name="读卡器">
+      <IDCard Name="IDCard" />
+    </读卡器>
+    <PLC设备 Name="PLC设备">
+      <ComPLC Name="ComPLC" />
+    </PLC设备>
+    <条码枪 Name="条码枪">
+      <BarCode Name="BarCode" />
+    </条码枪>
+    <IO板 Name="IO板">
+      <RemoteIO Name="RemoteIO" />
+      <GJI8O14 Name="GJI8O14"/> 
+      <ATEXY Name="ATEXY"/> 
+    </IO板>
+    <电表设备 Name="电表设备">
+      <MutiMeter Name="Meter" />
+    </电表设备>
+    <快充中继板 Name="快充中继板">
+      <FCMB Name="FCMB" />
+    </快充中继板>
+    <老化控制板 Name="老化控制板">
+      <GJMon32 Name="GJMon32" />
+    </老化控制板>
+    <电子负载 Name="电子负载">
+      <ELOAD Name="ELOAD" />
+    </电子负载>
+    <DD模块 Name="DD模块">
+      <DD Name="DD" />
+    </DD模块>
+    <ERS模块 Name="ERS模块">
+      <ERS Name="ERS" />
+    </ERS模块>
+    <DA回馈负载 Name="DA回馈负载">
+      <LED Name="LED" />
+    </DA回馈负载>
+    <Web接口 Name="Web接口">
+      <GJWeb Name="GJWeb" />
+      <Web2 Name="Web2" />
+    </Web接口>
+    <I2C控制板 Name="I2C控制板">
+      <I2C Name="I2C" />
+    </I2C控制板>
+    <烧录器 Name="烧录器">
+      <MinProg3 Name="PSoC" />
+    </烧录器>
+    <苹果烧录器 Name="苹果烧录器">
+       <Phoenix Name="Phoenix" />
+    </苹果烧录器>
+    <AC电流采集模块 Name="AC电流采集模块">
+      <MI Name="GJMI_10" />
+    </AC电流采集模块>
+    <通信转换模块 Name="通信转换模块">
+      <Switch Name="RS485_I2C" />
+    </通信转换模块>
+    <整流模块 Name="整流模块">
+      <FSP Name="FSPDC48V" />
+    </整流模块>
+    <IO采集板V3 Name="IO采集板V3">
+      <MIO32 Name="MIO32" />
+    </IO采集板V3>
+    <风扇控制板 Name="风扇控制板">
+      <GJFan Name="GJFan" />
+    </风扇控制板>
+    <冠佳MQTT Name="冠佳MQTT">
+      <MQTT Name="MQTT" />
+    </冠佳MQTT>
+     <软件版本升级 Name="软件版本升级">
+      <MQTT Name="Upgrade" />
+    </软件版本升级>
+    <TCP Name="TCP调试">
+      <Socket Name="Socket" />
+    </TCP>
+    <华为通信 Name="华为通信">
+      <HWSocket Name="HWSocket" />
+      <HWTelnet Name="HWTelnet" />
+    </华为通信>
+  </仪器设备>
+</冠佳电子>

@@ -1,0 +1,57 @@
+17:05:20.376 | [Action]: 服务端启动监听[端口:8000]
+17:05:26.346 | [Action]: 连接客户端[100.100.20.161:49941].
+17:05:32.046 | [Action]: Hello World
+17:05:32.126 | [Action]: Hello World
+17:05:32.176 | [Action]: Hello World
+17:05:32.226 | [Action]: Hello World
+17:05:32.266 | [Action]: Hello World
+17:05:32.606 | [Action]: Hello World
+17:05:32.826 | [Action]: Hello World
+17:05:33.096 | [Action]: Hello World
+17:05:33.316 | [Action]: Hello World
+17:05:33.526 | [Action]: Hello World
+17:05:33.726 | [Action]: Hello World
+17:05:33.906 | [Action]: Hello World
+17:05:34.166 | [Action]: Hello World
+17:05:38.026 | [Action]: Hello World
+17:05:38.426 | [Action]: Hello World
+17:05:38.656 | [Action]: Hello World
+17:05:38.896 | [Action]: Hello World
+17:05:39.156 | [Action]: Hello World
+17:05:39.396 | [Action]: Hello World
+17:05:39.666 | [Action]: Hello World
+17:05:39.876 | [Action]: Hello World
+17:05:40.096 | [Action]: Hello World
+17:05:40.326 | [Action]: Hello World
+17:05:40.546 | [Action]: Hello World
+17:05:40.766 | [Action]: Hello World
+17:05:41.056 | [Action]: Hello World
+17:05:41.336 | [Action]: Hello World
+17:05:41.616 | [Action]: Hello World
+17:05:41.896 | [Action]: Hello World
+17:05:42.176 | [Action]: Hello World
+17:05:42.466 | [Action]: Hello World
+17:05:42.966 | [Action]: Hello World
+17:05:43.236 | [Action]: Hello World
+17:05:46.066 | [Action]: Hello World
+17:05:46.406 | [Action]: Hello World
+17:05:46.596 | [Action]: Hello World
+17:05:46.826 | [Action]: Hello World
+17:05:47.046 | [Action]: Hello World
+17:05:47.276 | [Action]: Hello World
+17:05:47.496 | [Action]: Hello World
+17:05:47.726 | [Action]: Hello World
+17:05:47.946 | [Action]: Hello World
+17:05:48.166 | [Action]: Hello World
+17:07:00.756 | [Action]: 停止测试TCP服务器监听:端口[8000]
+17:07:25.723 | [Action]: 服务端启动监听[端口:8000]
+17:07:26.813 | [Action]: 连接客户端[100.100.20.161:49948].
+17:07:29.603 | [Action]: Hello World
+17:07:30.023 | [Action]: Hello World
+17:07:30.223 | [Action]: Hello World
+17:07:30.443 | [Action]: Hello World
+17:07:30.643 | [Action]: Hello World
+17:07:30.843 | [Action]: Hello World
+17:07:31.013 | [Action]: Hello World
+17:07:31.183 | [Action]: Hello World
+17:07:34.633 | [Action]: 停止测试TCP服务器监听:端口[8000]

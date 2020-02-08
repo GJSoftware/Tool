@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AD6CE2F-AEAA-45DB-86B7-229AEF310A9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GJ.TOOL</RootNamespace>
+    <AssemblyName>GJ.TOOL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GJ.DEV.CARD">
+      <HintPath>..\..\..\GuanJia\DLL\GJ.DEV.CARD.dll</HintPath>
+    </Reference>
+    <Reference Include="GJ.PDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLL\GJ.PDB.dll</HintPath>
+    </Reference>
+    <Reference Include="GJ.PLUGINS">
+      <HintPath>bin\Debug\DLL\GJ.PLUGINS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CUILogArgs.cs" />
+    <Compile Include="FrmATEXY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmATEXY.Designer.cs">
+      <DependentUpon>FrmATEXY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmComPLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmComPLC.Designer.cs">
+      <DependentUpon>FrmComPLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBarCode.designer.cs">
+      <DependentUpon>FrmBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDD.Designer.cs">
+      <DependentUpon>FrmDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmELOAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmELOAD.Designer.cs">
+      <DependentUpon>FrmELOAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmERS.Designer.cs">
+      <DependentUpon>FrmERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFCMB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFCMB.Designer.cs">
+      <DependentUpon>FrmFCMB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFSPDC48V.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFSPDC48V.Designer.cs">
+      <DependentUpon>FrmFSPDC48V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGJFan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGJFan.Designer.cs">
+      <DependentUpon>FrmGJFan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGJI8O14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGJI8O14.designer.cs">
+      <DependentUpon>FrmGJI8O14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGJMon32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGJMon32.designer.cs">
+      <DependentUpon>FrmGJMon32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGJWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGJWeb.Designer.cs">
+      <DependentUpon>FrmGJWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHWSocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHWSocket.Designer.cs">
+      <DependentUpon>FrmHWSocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHWTelnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHWTelnet.Designer.cs">
+      <DependentUpon>FrmHWTelnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmI2C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmI2C.Designer.cs">
+      <DependentUpon>FrmI2C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIDCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIDCard.Designer.cs">
+      <DependentUpon>FrmIDCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMQTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMQTT.Designer.cs">
+      <DependentUpon>FrmMQTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLED.Designer.cs">
+      <DependentUpon>FrmLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeter.Designer.cs">
+      <DependentUpon>FrmMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGJMI_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGJMI_10.Designer.cs">
+      <DependentUpon>FrmGJMI_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMIO32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMIO32.Designer.cs">
+      <DependentUpon>FrmMIO32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhoenix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhoenix.Designer.cs">
+      <DependentUpon>FrmPhoenix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPSoC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPSoC.Designer.cs">
+      <DependentUpon>FrmPSoC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRemoteIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRemoteIO.Designer.cs">
+      <DependentUpon>FrmRemoteIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRS485_I2C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRS485_I2C.Designer.cs">
+      <DependentUpon>FrmRS485_I2C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSocket.Designer.cs">
+      <DependentUpon>FrmSocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeb2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeb2.Designer.cs">
+      <DependentUpon>FrmWeb2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpgrade.designer.cs">
+      <DependentUpon>FrmUpgrade.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmATEXY.resx">
+      <DependentUpon>FrmATEXY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBarCode.en.resx">
+      <DependentUpon>FrmBarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComPLC.en.resx">
+      <DependentUpon>FrmComPLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmComPLC.resx">
+      <DependentUpon>FrmComPLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBarCode.resx">
+      <DependentUpon>FrmBarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDD.resx">
+      <DependentUpon>FrmDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmELOAD.resx">
+      <DependentUpon>FrmELOAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmERS.resx">
+      <DependentUpon>FrmERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFCMB.en.resx">
+      <DependentUpon>FrmFCMB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFCMB.resx">
+      <DependentUpon>FrmFCMB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFSPDC48V.resx">
+      <DependentUpon>FrmFSPDC48V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGJFan.resx">
+      <DependentUpon>FrmGJFan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGJI8O14.resx">
+      <DependentUpon>FrmGJI8O14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGJMon32.resx">
+      <DependentUpon>FrmGJMon32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGJWeb.resx">
+      <DependentUpon>FrmGJWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHWSocket.resx">
+      <DependentUpon>FrmHWSocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHWTelnet.resx">
+      <DependentUpon>FrmHWTelnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmI2C.resx">
+      <DependentUpon>FrmI2C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIDCard.en.resx">
+      <DependentUpon>FrmIDCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIDCard.resx">
+      <DependentUpon>FrmIDCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLED.en.resx">
+      <DependentUpon>FrmLED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeter.en.resx">
+      <DependentUpon>FrmMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMQTT.resx">
+      <DependentUpon>FrmMQTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLED.resx">
+      <DependentUpon>FrmLED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeter.resx">
+      <DependentUpon>FrmMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGJMI_10.resx">
+      <DependentUpon>FrmGJMI_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMIO32.resx">
+      <DependentUpon>FrmMIO32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhoenix.resx">
+      <DependentUpon>FrmPhoenix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPSoC.resx">
+      <DependentUpon>FrmPSoC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteIO.en.resx">
+      <DependentUpon>FrmRemoteIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteIO.resx">
+      <DependentUpon>FrmRemoteIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRS485_I2C.resx">
+      <DependentUpon>FrmRS485_I2C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSocket.resx">
+      <DependentUpon>FrmSocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeb2.resx">
+      <DependentUpon>FrmWeb2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpgrade.resx">
+      <DependentUpon>FrmUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GJ.COM\GJ.COM\GJ.COM.csproj">
+      <Project>{1366E787-328E-4379-A16B-2DF73F886C9E}</Project>
+      <Name>GJ.COM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.DEV.BARCODE\GJ.DEV.BARCODE\GJ.DEV.BARCODE.csproj">
+      <Project>{233E801D-180C-4B7B-8057-9AA0A874F7F9}</Project>
+      <Name>GJ.DEV.BARCODE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.DEV.COM\GJ.DEV.COM\GJ.DEV.COM.csproj">
+      <Project>{116D52F1-D3A4-4CAF-8DE1-7CFFAE2F69D9}</Project>
+      <Name>GJ.DEV.COM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.DEV.PLC\GJ.DEV.PLC\GJ.DEV.PLC.csproj">
+      <Project>{5008C5B8-2E4F-44E4-8309-34E7FC4E4B5C}</Project>
+      <Name>GJ.DEV.PLC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.DEV\GJ.DEV\GJ.DEV.csproj">
+      <Project>{E642316B-31E9-45A6-8364-3605EFD3E3D4}</Project>
+      <Name>GJ.DEV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.Iot\GJ.Iot.csproj">
+      <Project>{17688E09-BB69-4597-828B-3A903FB59F62}</Project>
+      <Name>GJ.Iot</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.MES\GJ.MES\GJ.MES.csproj">
+      <Project>{105487E0-5882-419B-A6EB-E1DB71CF9C7F}</Project>
+      <Name>GJ.MES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GJ.UI\GJ.UI.csproj">
+      <Project>{6A2F34CF-C099-4A9B-942F-A46994D1924B}</Project>
+      <Name>GJ.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Deploy="0" Reactor_Output="" Reactor_Configuration="ALL" Reactor_Project="" Reactor_Commands="" Reactor_Enabled="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

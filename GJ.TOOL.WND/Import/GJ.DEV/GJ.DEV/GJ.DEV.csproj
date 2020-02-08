@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E642316B-31E9-45A6-8364-3605EFD3E3D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GJ.DEV</RootNamespace>
+    <AssemblyName>GJ.DEV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dog_net_windows, Version=1.0.1.28668, Culture=neutral, PublicKeyToken=56120be447701319, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLL\dog_net_windows.dll</HintPath>
+    </Reference>
+    <Reference Include="GJ.COM">
+      <HintPath>bin\Debug\DLL\GJ.COM.dll</HintPath>
+    </Reference>
+    <Reference Include="hasp_net_windows, Version=7.8.17911.60000, Culture=neutral, PublicKeyToken=56120be447701319, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLL\hasp_net_windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATD\CAPF.cs" />
+    <Compile Include="ATD\CATDPara.cs" />
+    <Compile Include="ATEXY\CGJX6Y6.cs" />
+    <Compile Include="CanBus\CZLG_VI.cs" />
+    <Compile Include="CATEXY\CGJX6Y6.cs" />
+    <Compile Include="ELOAD\CEL_50_08.cs" />
+    <Compile Include="FAN\CGJ_NTC_FAN.cs" />
+    <Compile Include="FSP\CDD_48V.cs" />
+    <Compile Include="FSP\CFSPPara.cs" />
+    <Compile Include="FSP\CFSPThread.cs" />
+    <Compile Include="HuaWei\CAPSocket.cs" />
+    <Compile Include="IO\CIOPara.cs" />
+    <Compile Include="IO\CIO_I8_O14.cs" />
+    <Compile Include="LED\CDA_200_16.cs" />
+    <Compile Include="LED\CDA_250_8.cs" />
+    <Compile Include="MI\CMIPara.cs" />
+    <Compile Include="MI\CMIThread.cs" />
+    <Compile Include="SafeDog\IDog.cs" />
+    <Compile Include="Switch\CPara.cs" />
+    <Compile Include="Switch\CRS485_I2C.cs" />
+    <Compile Include="Cypress\CPSoC4.cs" />
+    <Compile Include="Cypress\CPSoC4Com.cs" />
+    <Compile Include="DD\CDDCom.cs" />
+    <Compile Include="DD\CDDPara.cs" />
+    <Compile Include="DD\CDDThread.cs" />
+    <Compile Include="DD\CDD_35V.cs" />
+    <Compile Include="DD\CDD_75V.cs" />
+    <Compile Include="DD\IDD.cs" />
+    <Compile Include="ELOAD\CELCom.cs" />
+    <Compile Include="ELOAD\CELPara.cs" />
+    <Compile Include="ELOAD\CEL_100_04.cs" />
+    <Compile Include="ELOAD\CEL_20_16.cs" />
+    <Compile Include="ELOAD\CEL_40_08.cs" />
+    <Compile Include="ELOAD\IEL.cs" />
+    <Compile Include="ERS\CERSCom.cs" />
+    <Compile Include="ERS\CERSPara.cs" />
+    <Compile Include="ERS\CERSThread.cs" />
+    <Compile Include="ERS\CGJ272_4.cs" />
+    <Compile Include="ERS\IERS.cs" />
+    <Compile Include="FCMB\CFMBCom.cs" />
+    <Compile Include="FCMB\CFMBPara.cs" />
+    <Compile Include="FCMB\CFMBThread.cs" />
+    <Compile Include="FCMB\CFMB_V1.cs" />
+    <Compile Include="FCMB\IFCMB.cs" />
+    <Compile Include="I2C\CI2CCom.cs" />
+    <Compile Include="I2C\CI2CPara.cs" />
+    <Compile Include="I2C\CI2CThread.cs" />
+    <Compile Include="I2C\CI2C_Server.cs" />
+    <Compile Include="I2C\II2C.cs" />
+    <Compile Include="LED\CDA_320_8.cs" />
+    <Compile Include="LED\CDA_750_4.cs" />
+    <Compile Include="LED\CLEDCom.cs" />
+    <Compile Include="LED\CLEDPara.cs" />
+    <Compile Include="LED\CLEDThread.cs" />
+    <Compile Include="LED\ILED.cs" />
+    <Compile Include="Meter\CMeterCom.cs" />
+    <Compile Include="Meter\CMeterPara.cs" />
+    <Compile Include="Meter\CPRU80_R1_2A_AC.cs" />
+    <Compile Include="Meter\IMeter.cs" />
+    <Compile Include="MI\CGJMI_10.cs" />
+    <Compile Include="Mon\CMON32.cs" />
+    <Compile Include="Mon\CMONCom.cs" />
+    <Compile Include="Mon\CMONPara.cs" />
+    <Compile Include="Mon\CMONThread.cs" />
+    <Compile Include="Mon\IMON.cs" />
+    <Compile Include="Phoenix\CProgrammer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoteIO\CIOCom.cs" />
+    <Compile Include="RemoteIO\CIOPara.cs" />
+    <Compile Include="RemoteIO\CIOThread.cs" />
+    <Compile Include="RemoteIO\IIO.cs" />
+    <Compile Include="RemoteIO\CIO_24_16.cs" />
+    <Compile Include="SafeDog\CSentinel.cs" />
+    <Compile Include="Switch\CRSI2CThread.cs" />
+    <Compile Include="Telnet\CTelnet.cs" />
+    <Compile Include="Temp\CDM23A.cs" />
+    <Compile Include="Temp\CLK150002B.cs" />
+    <Compile Include="V3\CMIO32.cs" />
+    <Compile Include="V3\CMIO32Thread.cs" />
+    <Compile Include="V3\CMIO32Para.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GJ.DEV.COM\GJ.DEV.COM\GJ.DEV.COM.csproj">
+      <Project>{116D52F1-D3A4-4CAF-8DE1-7CFFAE2F69D9}</Project>
+      <Name>GJ.DEV.COM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Enabled="0" Reactor_Commands="" Reactor_Project="" Reactor_Configuration="ALL" Reactor_Output="" Reactor_Deploy="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

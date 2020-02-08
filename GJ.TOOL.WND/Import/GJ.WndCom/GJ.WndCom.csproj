@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FD3D1A6-1154-4677-A960-29DA633FFACC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GJ.WndCom</RootNamespace>
+    <AssemblyName>GJ.WndCom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\GuanJia\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GJ.PDB, Version=2.0.0.2, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GuanJia\DLL\GJ.PDB.dll</HintPath>
+    </Reference>
+    <Reference Include="GJ.PLUGINS">
+      <HintPath>..\..\GuanJia\DLL\GJ.PLUGINS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSample.Designer.cs">
+      <DependentUpon>FrmSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSnQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSnQuery.designer.cs">
+      <DependentUpon>FrmSnQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYield.designer.cs">
+      <DependentUpon>FrmYield.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmReport.en.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSample.en.resx">
+      <DependentUpon>FrmSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSample.resx">
+      <DependentUpon>FrmSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSnQuery.en.resx">
+      <DependentUpon>FrmSnQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSnQuery.resx">
+      <DependentUpon>FrmSnQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYield.en.resx">
+      <DependentUpon>FrmYield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYield.resx">
+      <DependentUpon>FrmYield.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GJ.COM\GJ.COM\GJ.COM.csproj">
+      <Project>{1366E787-328E-4379-A16B-2DF73F886C9E}</Project>
+      <Name>GJ.COM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GJ.MES\GJ.MES\GJ.MES.csproj">
+      <Project>{105487E0-5882-419B-A6EB-E1DB71CF9C7F}</Project>
+      <Name>GJ.MES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

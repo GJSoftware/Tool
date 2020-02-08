@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Socket>
+<!--整体参数-->
+<Parameter>
+  <!--设备类型0x00-->
+  <DeviceType>00</DeviceType>
+  <!--查询告警0x01-->
+  <CommandNo>01</CommandNo>
+  <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>0</DataValue>
+</Parameter>
+<Parameter>
+  <!--设备类型0x00-->
+  <DeviceType>00</DeviceType>
+  <!--查询状态0x03-->
+  <CommandNo>03</CommandNo>
+  <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>1</DataValue>
+</Parameter>
+<Parameter>
+  <!--设备类型0x00-->
+  <DeviceType>00</DeviceType>
+  <!--查询插拔次数0x04-->
+  <CommandNo>04</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>10</DataValue>
+</Parameter>
+<!--上料位-->
+<Parameter>
+  <!--设备类型0x02-->
+  <DeviceType>02</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>01</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>0</DataValue>
+</Parameter>
+<!--下料位-->
+<Parameter>
+  <!--设备类型0x03-->
+  <DeviceType>03</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>01</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>0</DataValue>
+</Parameter>
+<!--移载机-->
+<Parameter>
+  <!--设备类型0x04-->
+  <DeviceType>04</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>01</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>0</DataValue>
+</Parameter>
+<Parameter>
+  <!--设备类型0x04-->
+  <DeviceType>04</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>04</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>01</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>1</DataValue>
+</Parameter>
+<!--缓存位-->
+<Parameter>
+  <!--设备类型0x08-->
+  <DeviceType>08</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>01</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>1;A0001 A0002</DataValue>
+</Parameter>
+<!--治具-->
+<Parameter>
+  <!--设备类型0x09-->
+  <DeviceType>09</DeviceType>
+  <!--查询状态0x01-->
+  <CommandNo>01</CommandNo>
+   <!--读:0x00;写:0x01-->
+  <CmdWR>00</CmdWR>
+  <!--数据值-字符串-->
+  <DataValue>5</DataValue>
+</Parameter>
+<!--老化位-->
+</Socket>

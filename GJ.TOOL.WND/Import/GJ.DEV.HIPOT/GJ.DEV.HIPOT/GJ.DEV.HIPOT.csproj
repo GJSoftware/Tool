@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AA95A58-2B92-493E-8A96-99E4A595984A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GJ.DEV.HIPOT</RootNamespace>
+    <AssemblyName>GJ.DEV.HIPOT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GJ.DEV.COM">
+      <HintPath>bin\Debug\Dll\GJ.DEV.COM.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=8.7.35.131, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Dll\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.NI4882, Version=8.9.35.104, Culture=neutral, PublicKeyToken=18cbae0f9955702a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Dll\NationalInstruments.NI4882.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CChroma19020.cs" />
+    <Compile Include="CChroma19020_GPIB.cs" />
+    <Compile Include="CChroma19032.cs" />
+    <Compile Include="CChroma19053_8.cs" />
+    <Compile Include="CExtech7100.cs" />
+    <Compile Include="CExtech7440.cs" />
+    <Compile Include="CExtech7440_GPIB.cs" />
+    <Compile Include="CHPCom.cs" />
+    <Compile Include="CHPPara.cs" />
+    <Compile Include="CTH9010.cs" />
+    <Compile Include="IHP.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CNS200.cs" />
+    <Compile Include="CChroma19020_4.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GJ.COM\GJ.COM\GJ.COM.csproj">
+      <Project>{1366E787-328E-4379-A16B-2DF73F886C9E}</Project>
+      <Name>GJ.COM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

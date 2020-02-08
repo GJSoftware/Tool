@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A2F34CF-C099-4A9B-942F-A46994D1924B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GJ.UI</RootNamespace>
+    <AssemblyName>GJ.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PieChart\GraphicsUtil.cs" />
+    <Compile Include="PieChart\PieChart.cs" />
+    <Compile Include="PieChart\PieChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieChart\PieSlice.cs" />
+    <Compile Include="PieChart\Quadrilateral.cs" />
+    <Compile Include="PieChart\Util.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="udcChartOnOff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="udcChartOnOff.Designer.cs">
+      <DependentUpon>udcChartOnOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udcChartPie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="udcChartPie.Designer.cs">
+      <DependentUpon>udcChartPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udcRunLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="udcRunLog.designer.cs">
+      <DependentUpon>udcRunLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udcChartLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="udcChartLine.Designer.cs">
+      <DependentUpon>udcChartLine.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PieChart\PieChartControl.resx">
+      <DependentUpon>PieChartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udcChartOnOff.resx">
+      <DependentUpon>udcChartOnOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udcChartPie.resx">
+      <DependentUpon>udcChartPie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udcRunLog.en.resx">
+      <DependentUpon>udcRunLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udcRunLog.resx">
+      <DependentUpon>udcRunLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udcChartLine.resx">
+      <DependentUpon>udcChartLine.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RunLog.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chart_Line.bmp" />
+    <EmbeddedResource Include="Chart_Pie.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chart-Bar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GJ.COM\GJ.COM\GJ.COM.csproj">
+      <Project>{1366E787-328E-4379-A16B-2DF73F886C9E}</Project>
+      <Name>GJ.COM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
